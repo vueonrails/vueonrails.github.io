@@ -4,17 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
 
-
- #book{
-  width: 350px;
-  height: 480px;
-  color: white;
-  text-align: center;
-  background: #1F1F1F;
-  padding: 20px;
-  padding-top: 80px; 
-}
-
 html,
 body {
   width: 100%;
