@@ -13,13 +13,11 @@
   box-shadow: 0 10px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19) !important;
 }
 
-
 /* after min-height */
 #mainNav {
   /* background-color: #1F1F1F; */
   color:white;
 }
-
 
 #mainNav.navbar-shrink {
   /* background-color: #1F1F1F; */
@@ -35,7 +33,6 @@
   color:black;
 }
 
-
 header.masthead {
   background: url(../img/bg-pattern.png), #A60202;
   background: url(../img/bg-pattern.png), -webkit-linear-gradient(to left, #AD0303,#3E6994, #48B081); 
@@ -43,9 +40,7 @@ header.masthead {
 
   /* background: url(../img/bg-pattern.png), -webkit-linear-gradient(to left, #cc0000, #4fc08d); 
   background: url(../img/bg-pattern.png), linear-gradient(to left, #cc0000, #4fc08d);   */
-
   /* background: url(../img/bg-pattern.png), -webkit-linear-gradient(to left, #7b4397, #dc2430); */
-
 }
 
 .btn-outline.active, .btn-outline:active, .btn-outline:focus, .btn-outline:hover {
