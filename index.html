@@ -2,33 +2,25 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Vue on Rails</title>
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
-
     <!-- Custom styles for this template -->
     <link href="./css/new-age.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/blinking-pointer.css">
     <link href="./css/custom.css" rel="stylesheet">
-    
-
   </head>
 
   <body id="page-top">
@@ -38,12 +30,21 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Vue on Rails</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
+          <span class="circle-pointer">
+              <span class="inner-circle-pointer red-circle"></span>
+            </span>
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a onClick="alert('Inform me when the book is ready.')" class="nav-link js-scroll-trigger"><u>Inform me when it is ready</u></a>
+               
+              <a onClick="alert('Inform me when the book is ready.')" class="nav-link js-scroll-trigger"><u>Inform me when it is ready</u>
+                <span class="circle-pointer">
+                    <span class="inner-circle-pointer green-circle"></span>
+                  </span>
+              </a>
+
             </li>
           </ul>
         </div>
@@ -60,7 +61,11 @@
               
               <p>Tentative publishing date: Sept 2018.</p> 
               <p>To be written by <a target="_blank" href="https://github.com/rlafranchi">Richard LaFranchi</a> and <a target="_blank" href="https://github.com/ytbryan">Bryan Lim</a> </p>
-              <a onClick="alert('Hi stranger, the book is not ready yet. Sign up to get notify when the book is ready. You can also send your questions to vueonrails@gmail.com')" class="btn btn-outline btn-xl js-scroll-trigger">Get the first chapter free!</a>
+              <a onClick="alert('Hi stranger, the book is not ready yet. Sign up to get notify when the book is ready. You can also send your questions to vueonrails@gmail.com')" class="btn btn-outline btn-xl js-scroll-trigger">Get the first chapter free!
+                  <span class="circle-pointer">
+                      <span class="inner-circle-pointer red-circle"></span>
+                    </span>
+              </a>
             </div>
           </div>
           <div class="col-lg-5 my-auto">
