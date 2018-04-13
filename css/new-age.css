@@ -17,7 +17,7 @@ a {
   -moz-transition: all .35s;
   transition: all .35s; }
   a:hover, a:focus {
-    color: #fcbd20; }
+    color: rgba(249, 195, 1, 1); }
 
 hr {
   max-width: 100px;
@@ -63,7 +63,7 @@ section {
     font-weight: 200;
     letter-spacing: 1px; }
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-      color: #fcbd20; }
+      color: rgba(249, 195, 1, 1); }
   #mainNav .navbar-toggler {
     font-size: 12px;
     padding: 8px 10px;
