@@ -300,8 +300,7 @@ footer {
 .btn {
   border-radius: 300px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-  letter-spacing: 2px;
-  text-transform: uppercase; }
+}
 
 .btn-xl {
   font-size: 11px;
