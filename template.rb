@@ -1,4 +1,4 @@
-gem 'webpacker', '> 3.5.5'
+gem 'webpacker', '~> 3.5.5'
 gem 'vuejs', '> 1.0.39'
 run 'bundle install' 
 generate(:scaffold, 'pages')
