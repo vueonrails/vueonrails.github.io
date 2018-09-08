@@ -1,12 +1,14 @@
 .yellow-button:hover {
   background:#1a1a1a;
+  color: rgba(249, 195, 1, 1);
+  font-weight: 400;
   border: #1a1a1a;
 }
 
 .yellow-button{
   background:rgba(249, 195, 1, 1);
   border: rgba(249, 195, 1, 1);
-  font-weight: 800;
+  font-weight: 400;
   color:#1a1a1a;
 }
 
