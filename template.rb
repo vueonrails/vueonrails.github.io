@@ -9,3 +9,4 @@ run 'rails db:migrate'
 run 'rails webpacker:install'
 run 'rails webpacker:install:vue'
 run 'rails vue:setup'
+git :init
