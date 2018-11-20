@@ -1,16 +1,15 @@
-<footer>
-  <div class="container">
-    <div>
-      <p>All Rights Reserved.</p>
-    </div>
-    <div>
-      <p>Copyright &copy; 2018 Vue on Rails.</p>
-    </div>
-    <div>
-      <p>Questions? Email <a href="mailto:vueonrails@gmail.com">vueonrails@gmail.com</a></p>
-    </div>
-    <div>
-      <p>Crafted with love by <a href="http://github.com/rlafranchi/">Richard LaFranchi</a> and <a href="http://github.com/ytbryan">Bryan Lim</a></p>
-    </div>
+<footer class="bg-dark text-light py-4 small text-muted">
+  <div class="container text-center">
+    <p>
+      &copy; {{ 'now' | date: "%Y" }} Vue on Rails.
+      <span class="mx-1">|</span>
+      All Rights Reserved.
+    </p>
+    <p>
+      Questions?
+      Email <a href="mailto:vueonrails@gmail.com" class="text-warning">vueonrails@gmail.com</a>
+      or ask us on <a href="{{ site.github_org }}" class="text-warning">GitHub</a>.
+    </p>
+    <p class="mb-0">Crafted with <i class="fas fa-heart text-danger"></i> by <a href="http://github.com/rlafranchi/" class="text-warning">Richard LaFranchi</a> and <a href="http://github.com/ytbryan" class="text-warning">Bryan Lim</a>.</p>
   </div>
 </footer>

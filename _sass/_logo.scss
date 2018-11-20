@@ -1,0 +1,14 @@
+.logo {
+  background-color: #a60202;
+  background: url("#{ $baseurl }/assets/img/bg-pattern.png"), linear-gradient(to left, #ad0303, #34495e, #48b081);
+  border-radius: .75rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+.logo-text {
+  color: white;
+  font-size: 4.5rem;
+  opacity: .85;
+  text-align: center;
+}
