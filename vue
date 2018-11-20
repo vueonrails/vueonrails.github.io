@@ -40,7 +40,7 @@ if ARGV.include? "--devise"
   gem 'devise', '~> 4.4', '>= 4.4.3'
 end
 
-# Use --admin to add Administrate as your administrative manager. Read more https://github.com/thoughtbot/administrate  
+# Use --admin to add Administrate as your administrative manager. Read more https://github.com/thoughtbot/administrate
 if ARGV.include? "--admin"
   gem 'administrate'
 end
@@ -50,10 +50,10 @@ if ARGV.include? "--sidekiq"
   gem 'sidekiq'
 end
 
-run 'bundle install' 
+run 'bundle install'
 
 unless ARGV.include? "--no-page"
-  generate(:scaffold, 'page') 
+  generate(:scaffold, 'page')
   route "root to: 'pages#index'"
 end
 
@@ -72,7 +72,7 @@ if ARGV.include? "--foundation"
   rails_command 'generate foundation:install'
 end
 
-# Init livereload 
+# Init livereload
 if ARGV.include? "--livereload"
   run "guard init livereload"
 end
@@ -89,17 +89,17 @@ end
 # Finish the bootstrap setup
 if ARGV.include? "--bootstrap"
   run "mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss"
-  
+
   bootstrapcss =   <<-eos
     @import "bootstrap";
   eos
-  
+
   insert_into_file "app/assets/stylesheets/application.scss",
   bootstrapcss, after: " */\n"
-  
+
   bootstrap =   <<-eos
   //= require jquery3
-  //= require bootstrap-sprockets   
+  //= require bootstrap-sprockets
   eos
 
   insert_into_file "app/assets/javascripts/application.js",
@@ -116,7 +116,7 @@ if ARGV.include? "--whenever"
   run "wheneverize ."
 end
 
-# Finish the devise installation. 
+# Finish the devise installation.
 if ARGV.include? "--devise"
   rails_command "generate devise:install"
 end
