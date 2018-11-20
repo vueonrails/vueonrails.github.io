@@ -36,17 +36,17 @@ end
 
 # Devise is added by default. Use no-devise option to prevent devise setup. 
 # Read more about the full options of this application template, please go to github.com/ytbryan/vueonrails
-unless ARGV.include? "--no-devise"
+unless ARGV.include? "-devise"
   gem 'devise', '~> 4.4', '>= 4.4.3'
 end
 
 # Administrate is added as an administrative manager. Use no-admin option to prevent administrate setup. 
-unless ARGV.include? "--no-admin"
+unless ARGV.include? "--admin"
   gem 'administrate'
 end
 
 # Sidekiq is added as a background processor. Use no-sidekiq option to prevent administrate setup. 
-unless ARGV.include? "--no-sidekiq"
+unless ARGV.include? "--sidekiq"
   gem 'sidekiq'
 end
 
@@ -54,9 +54,6 @@ run 'bundle install'
 
 unless ARGV.include? "--no-page"
   generate(:scaffold, 'page') 
-end
-
-unless ARGV.include? "--no-page"
   route "root to: 'pages#index'"
 end
 
@@ -110,7 +107,7 @@ if ARGV.include? "--bootstrap"
 end
 
 # Finish up the administrate setup.
-unless ARGV.include? "--no-admin"
+unless ARGV.include? "--admin"
   rails_command 'generate administrate:install'
 end
 
@@ -120,13 +117,9 @@ if ARGV.include? "--whenever"
 end
 
 # Finish up the devise installation. Use no-devise to exclude the setup.
-unless ARGV.include? "--no-devise"
+unless ARGV.include? "--devise"
   rails_command "generate devise:install"
 end
-
-run "yarn add file:/Users/ytbryan/Desktop/VR/vue-form-for"
-run "yarn install"
-rails_command "generate vue something --form"
 
 # Generate your first git commit message.
 git add: "."
