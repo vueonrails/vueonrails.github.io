@@ -2,15 +2,15 @@ gem 'webpacker', '>= 4.0.x'
 gem 'vueonrails'
 route "mount VueOnRails::Engine, at: 'vue'"
 
-# Add bootstrap style with jquery if bootstrap option is provided. Visit https://getbootstrap.com
-# Read more about the full options of this application template, please go to github.com/ytbryan/vueonrails
+# Use --bootstrap to add bootstrap style with jquery. Read more https://getbootstrap.com
+# Read more about the full options of this application template, please go to github.com/vueonrails/vueonrails
 if ARGV.include? "--bootstrap"
   gem 'bootstrap', '~> 4.1.3'
   gem 'jquery-rails'
 end
 
-# Add foundation style if foundation option is provided. Visit https://foundation.zurb.com
-# Read more about the full options of this application template, please go to github.com/ytbryan/vueonrails
+# Use --foundation to add foundation style. Read more https://foundation.zurb.com
+# Read more about the full options of this application template, please go to github.com/vueonrails/vueonrails
 if ARGV.include? "--foundation"
   gem 'foundation-rails'
   gem 'autoprefixer-rails'
@@ -21,7 +21,7 @@ if ARGV.include? "--fontawesome"
   gem "font-awesome-rails"
 end
 
-# Add live-reloading to refresh Rails view
+# Add live-reloading to refresh Rails view https://github.com/guard/guard-livereload
 if ARGV.include? "--livereload"
   gem_group :development do
     gem 'guard'
@@ -29,24 +29,24 @@ if ARGV.include? "--livereload"
   end
 end
 
-# Add whenever for automating cron jobs
+# Add whenever for automating cron jobs. Read more https://github.com/javan/whenever
 if ARGV.include? "--whenever"
   gem 'whenever', require: false
 end
 
-# Devise is added by default. Use no-devise option to prevent devise setup. 
-# Read more about the full options of this application template, please go to github.com/ytbryan/vueonrails
-unless ARGV.include? "-devise"
+# Use --devise to add Devise. Read more https://github.com/plataformatec/devise
+# Read more about the full options of this application template, please go to http://github.com/vueonrails/vueonrails
+if ARGV.include? "--devise"
   gem 'devise', '~> 4.4', '>= 4.4.3'
 end
 
-# Administrate is added as an administrative manager. Use no-admin option to prevent administrate setup. 
-unless ARGV.include? "--admin"
+# Use --admin to add Administrate as your administrative manager. Read more https://github.com/thoughtbot/administrate  
+if ARGV.include? "--admin"
   gem 'administrate'
 end
 
-# Sidekiq is added as a background processor. Use no-sidekiq option to prevent administrate setup. 
-unless ARGV.include? "--sidekiq"
+# Use --sidekiq to add Sidekiq as your background processor. Read more https://github.com/mperham/sidekiq
+if ARGV.include? "--sidekiq"
   gem 'sidekiq'
 end
 
@@ -63,8 +63,8 @@ rails_command 'webpacker:install'
 rails_command 'webpacker:install:vue'
 run "yarn add @rails/webpacker@next"
 
-# Vue on Rails setup to install Vue dependencies, Vue component generators, 
-# Configuration and Jest dependencies
+# Vue on Rails setup to install Vue dependencies, Vue component generators
+# Configuration and Jest dependencies. Read more http://github.com/vueonrails/vueonrails
 rails_command 'vue:setup'
 
 # Gem setup after bundle install
@@ -77,7 +77,7 @@ if ARGV.include? "--livereload"
   run "guard init livereload"
 end
 
-# Finish up the fontawesome setup
+# Finish the fontawesome setup
 if ARGV.include? "--fontawesome"
   fontawesome =   <<-eos
  *= require font-awesome
@@ -86,7 +86,7 @@ if ARGV.include? "--fontawesome"
    fontawesome, before: " *= require_self"
 end
 
-# Finish up the bootstrap setup
+# Finish the bootstrap setup
 if ARGV.include? "--bootstrap"
   run "mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss"
   
@@ -106,18 +106,18 @@ if ARGV.include? "--bootstrap"
   bootstrap, before: "//= require_tree ."
 end
 
-# Finish up the administrate setup.
-unless ARGV.include? "--admin"
+# Finish the administrate setup.
+if ARGV.include? "--admin"
   rails_command 'generate administrate:install'
 end
 
-# Finish up the whenever gem setup.
+# Finish the whenever gem setup.
 if ARGV.include? "--whenever"
   run "wheneverize ."
 end
 
-# Finish up the devise installation. Use no-devise to exclude the setup.
-unless ARGV.include? "--devise"
+# Finish the devise installation. 
+if ARGV.include? "--devise"
   rails_command "generate devise:install"
 end
 
