@@ -17,7 +17,11 @@
   <body>
     {{ content }}
 
-    {% include js_getclicky.html %}
-    {% include js_getdrip.html %}
+    {%- if jekyll.environment == "production" -%}
+      {% include js_getclicky.html %}
+      {% include js_getdrip.html %}
+    {%- endif -%}
+
+    <script src="{{ '/assets/js/vue.js' | relative_url }}"></script>
   </body>
 </html>

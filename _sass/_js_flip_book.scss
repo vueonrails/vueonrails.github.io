@@ -1,0 +1,223 @@
+// inspiration https://tympanus.net/Development/3DBookShowcase/
+
+$book-width: 360px;
+$book-height: 480px;
+
+$book-width: 300px !default;
+$book-height: 400px !default;
+
+.book-container {
+  cursor: pointer;
+  position: relative;
+  width: $book-width;
+  height: $book-height;
+  z-index: 1;
+  perspective: $book-width * 6;
+  user-select: none;
+
+  .book-item {
+    position: absolute;
+    width: 100%;
+    height: $book-height;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    &.book-view-cover:hover {
+      transform: rotate3d(0, 1, 0, 35deg);
+    }
+    > div {
+      display: block;
+      position: absolute;
+    }
+  }
+  .book-front {
+    > div {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
+    }
+    transform-style: preserve-3d;
+    transform-origin: 0% 50%;
+    transition: transform .5s;
+    transform: translate3d(0, 0, 20px);
+    z-index: 10;
+  }
+  .book-page {
+    transform: translate3d(0, 0, 19px);
+    display: none;
+    width: $book-width - 5px;
+    height: $book-height - (5px * 2);
+    top: 5px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 9;
+  }
+  .book-front,
+  .book-back,
+  .book-front > div {
+    width: $book-width;
+    height: $book-height;
+  }
+  .book-left,
+  .book-right {
+    width: 40px;
+    left: -20px;
+  }
+  .book-top,
+  .book-bottom {
+    width: $book-width - 5px;
+    height: 40px;
+    top: -15px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .book-back {
+    transform: rotate3d(0, 1, 0, -180deg) translate3d(0, 0, 20px);
+    box-shadow: 10px 10px 30px rgba(#000, 0.3);
+    border-radius: 3px 0 0 3px;
+  }
+  .book-cover-back {
+    background-color: #000;
+    transform: rotate3d(0, 1, 0, -179deg);
+  }
+  .book-right {
+    height: $book-height - (5px * 2);
+    top: 5px;
+    transform: rotate3d(0, 1, 0, 90deg) translate3d(0, 0, $book-width - 5px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .book-left {
+    height: $book-height;
+    transform: rotate3d(0, 1, 0, -90deg);
+  }
+  .book-top {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+  .book-bottom {
+    transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, $book-height - (5px * 2));
+  }
+  .book-view-inside .book-front {
+    transform: translate3d(0, 0, 20px) rotate3d(0, 1, 0, -160deg);
+  }
+  .book-item {
+    &.book-view-inside {
+      transform: translate3d(0, 0, 150px) rotate3d(0, 1, 0, 0deg);
+    }
+    &.book-view-back {
+      transform: translate3d(0, 0, 0px) rotate3d(0, 1, 0, 180deg);
+    }
+  }
+  .book-page,
+  .book-right,
+  .book-top,
+  .book-bottom {
+    background-color: #fff;
+  }
+  .book-front {
+    > div {
+      border-radius: 0 3px 3px 0;
+      box-shadow: inset 4px 0 10px rgba(#000, 0.1);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 1px;
+      bottom: 1px;
+      left: -1px;
+      width: 1px;
+    }
+  }
+  .book-cover:after,
+  .book-back:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 3px;
+    background: rgba(#000, 0.06);
+    box-shadow: 1px 0 3px rgba(#fff, 0.1);
+  }
+  .book-back:after {
+    left: auto;
+    right: 10px;
+  }
+}
+
+/* Transform classes */
+
+/* Main colors and content */
+
+.book-left .book-left-content {
+  width: $book-height;
+  height: 40px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) translateY(-40px);
+}
+
+.book-content {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  padding: 30px;
+  overflow: hidden;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  cursor: default;
+}
+
+.book-content-current {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.book-content p {
+  padding: 0 0 10px;
+  color: #000;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: justify;
+  user-select: none;
+}
+
+
+/* Individual style & artwork */
+/* Book: Vue on Rails */
+.book-style-vueonrails {
+  .book-front > div,
+  .book-back,
+  .book-left,
+  .book-front:after {
+    background-color: #55a973;
+  }
+
+  .book-cover {
+    // background: url("#{ $baseurl }/assets/img/logo.png") no-repeat top center;
+    .book-cover-content {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      left: 0;
+      padding: 30px;
+      background: rgba(#fff, .25);
+      color: #fff;
+      text-shadow: 0 -1px 0 rgba(#000, .1);
+    }
+  }
+  .book-content {}
+  .book-left-content {}
+  .book-back {
+    .bg-light {
+      background-color: rgba(#fff, .25) !important;
+    }
+  }
+}
