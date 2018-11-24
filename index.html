@@ -25,28 +25,25 @@ title: Vue on Rails
           </ul>
         </div>
 
-        <form action="//vueonrails.us16.list-manage.com/subscribe/post?u=42b0f47a078393ecf6010d1e2&amp;id=44754794da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="p-5" target="_blank" novalidate>
+        <form action="//vueonrails.us16.list-manage.com/subscribe/post?u=42b0f47a078393ecf6010d1e2&amp;id=44754794da" method="post" name="mc-embedded-subscribe-form" class="pl-md-5 py-md-3 w-75" target="_blank" novalidate>
           <div class="form-label-group">
-            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Your Name" autofocus />
-            <label for="mce-FNAME">Your Name</label>
+            <input type="text" value="" name="FNAME" id="fname" class="form-control" placeholder="Your Name" autofocus />
+            <label for="fname">Your Name</label>
           </div>
 
           <div class="form-label-group">
-            <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email Address" required />
-            <label for="mce-EMAIL">Email Address</label>
+            <input type="email" value="" name="EMAIL" id="email" class="form-control" placeholder="Email Address" required />
+            <label for="email">Email Address</label>
           </div>
 
           <input type="text" name="b_6632a8a6e89ea6c43ee2a2000_5029b8e51f" tabindex="-1" value="" class="d-none" />
-          <input type="submit" value="Notify me when it's ready" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-warning px-4" />
+          <input type="submit" value="Notify me when it's ready" name="subscribe" class="btn btn-lg btn-block btn-warning" />
         </form>
 
       </div>
 
-      <div class="col-lg-5 my-auto">
-        <div class="vuejs-book text-center text-light shadow-lg">
-          <h1 class="display-5 font-weight-light">Vue on Rails</h1>
-          <p class="lead">Discover how to build delightful web app using Vue 2.x and Rails 5.x</p>
-        </div>
+      <div class="col-lg-5 my-auto" data-vuejs="app">
+        <vueonrails-book></vueonrails-book>
       </div>
 
     </div>

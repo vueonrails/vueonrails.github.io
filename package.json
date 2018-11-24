@@ -1,0 +1,26 @@
+{
+  "name": "vueonrails-homepage",
+  "version": "1.0.0",
+  "description": "The homepage of Vue on Rails",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel _js/vue.js --out-dir assets/js --no-source-maps",
+    "build": "parcel build _js/vue.js --out-dir assets/js --no-source-maps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.10.3",
+    "vue": "^2.5.17",
+    "vue-hot-reload-api": "^2.3.1"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.3.0",
+    "sass": "^1.15.1",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common"
+  }
+}

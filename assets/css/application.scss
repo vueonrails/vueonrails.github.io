@@ -1,8 +1,9 @@
 ---
 ---
 
-$baseurl: "{{ site.baseurl }}";
+$baseurl: "{{ site.baseurl }}" !default;
 
-@import "logo";
 @import "custom";
 @import "form_floating_labels";
+@import "logo";
+@import "js_flip_book";

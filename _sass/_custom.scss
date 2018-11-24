@@ -5,15 +5,6 @@ body {
   padding-top: 3rem;
 }
 
-.vuejs-book {
-  border-top: .75rem solid #f9c301;
-  width: 22rem;
-  height: 30rem;
-  background: #1a1a1a;
-  padding: 1.25rem;
-  padding-top: 5rem;
-}
-
 .section-teaser {
   background-color: #a60202;
   background: url("#{ $baseurl }/assets/img/bg-pattern.png"), linear-gradient(to left, #ad0303, #34495e, #48b081);
