@@ -1,6 +1,6 @@
 gem 'webpacker', '>= 4.0.x'
 gem 'vueonrails', github: "vueonrails/vueonrails"
-route "mount VueOnRails::Engine, at: 'vue'"
+route "mount Vueonrails::Engine, at: 'vue'"
 
 # Use --bootstrap to add bootstrap style with jquery. Read more https://getbootstrap.com
 # Read more about the full options of this application template, please go to github.com/vueonrails/vueonrails
