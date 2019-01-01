@@ -1,4 +1,4 @@
-gem 'webpacker'
+gem 'webpacker', '>= 4.0.x'
 gem 'vueonrails', github: "vueonrails/vueonrails"
 route "mount Vueonrails::Engine, at: 'vue'"
 
@@ -61,6 +61,7 @@ rails_command 'db:create'
 rails_command 'db:migrate'
 rails_command 'webpacker:install'
 rails_command 'webpacker:install:vue'
+run "yarn add @rails/webpacker@next"
 
 # Vue on Rails setup to install Vue dependencies, Vue component generators
 # Configuration and Jest dependencies. Read more http://github.com/vueonrails/vueonrails
