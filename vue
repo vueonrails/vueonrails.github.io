@@ -1,5 +1,5 @@
-gem 'webpacker', '~> 3.x.x'
-gem 'vueonrails', '~> 0.x.x'
+gem 'webpacker', '~> 3.x'
+gem 'vueonrails', '~> 0.x'
 route "mount Vueonrails::Engine, at: 'vue'"
 
 # Use --bootstrap to add bootstrap style with jquery. Read more https://getbootstrap.com
