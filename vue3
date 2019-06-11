@@ -1,5 +1,5 @@
-gem 'webpacker', '>= 4.x'
-gem 'vueonrails', '~> 1.x'
+gem 'webpacker', '~> 3.x'
+gem 'vueonrails', '~> 0.x'
 route "mount Vueonrails::Engine, at: 'vue'"
 
 # Use --bootstrap to add bootstrap style with jquery. Read more https://getbootstrap.com
@@ -61,7 +61,6 @@ rails_command 'db:create'
 rails_command 'db:migrate'
 rails_command 'webpacker:install'
 rails_command 'webpacker:install:vue'
-run "yarn add @rails/webpacker@next"
 
 # Vue on Rails setup to install Vue dependencies, Vue component generators
 # Configuration and Jest dependencies. Read more http://github.com/vueonrails/vueonrails
