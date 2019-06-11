@@ -14,9 +14,7 @@
         </div>
         <div class="book-page">
           <div class="book-content book-content-current">
-            <div class="logo d-flex justify-content-center mx-auto mb-3">
-              <div class="logo-text align-self-center">VR</div>
-            </div>
+            <div class="logo d-flex mx-auto mb-3"></div>
             <p class="lead">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -24,9 +22,7 @@
         </div>
         <div class="book-back">
           <div class="bg-light py-3 mt-5">
-            <div class="logo d-flex justify-content-center mx-auto">
-              <div class="logo-text align-self-center">VR</div>
-            </div>
+            <div class="logo d-flex mx-auto"></div>
           </div>
           <p class="text-center text-light small py-4 px-4">
             Explain the concept of Rails first &amp; Vue first-class approach
