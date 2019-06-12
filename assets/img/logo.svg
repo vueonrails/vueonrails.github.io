@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF5A60" offset="0%"></stop>
+            <stop stop-color="#41B7A0" offset="34.2298353%"></stop>
+            <stop stop-color="#39ADBC" offset="69.4863809%"></stop>
+            <stop stop-color="#515169" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="512" height="512" rx="70"></rect>
+        <rect id="Rectangle-Inner" fill="#FFFFFF" x="10" y="10" width="492" height="492" rx="63"></rect>
+        <g id="Logo" transform="translate(52.000000, 141.000000)" fill-rule="nonzero">
+            <polygon id="Path" fill="#FF5A60" points="407 65 341.91573 0 140.154494 0 76 65"></polygon>
+            <polygon id="Path" fill="#39ADBC" points="331.904 65 204.304 190.615034 76.704 65 2 65 204.304 270 408 65"></polygon>
+            <polygon id="Path" fill="#515169" points="332 65 204.5 191 77 65"></polygon>
+            <polygon id="Path" fill="#41B7A0" points="243 229.931818 76.0534351 65 0 65 203.582061 270"></polygon>
+        </g>
+    </g>
+</svg>
