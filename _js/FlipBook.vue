@@ -8,7 +8,7 @@
             <div class="book-cover-content">
               <h2 class="font-weight-light display-5">Vue on Rails</h2>
               <hr class="w-25">
-              <span class="font-weight-light small">Discover how to build delightful web app using Vue.js and Ruby on Rails</span>
+              <span class="font-weight-light small">End-to-End Guide to Building Web Apps Using Vue.js and Rails</span>
             </div>
           </div>
         </div>
@@ -25,13 +25,11 @@
             <div class="logo d-flex mx-auto"></div>
           </div>
           <p class="text-center text-light small py-4 px-4">
-            Explain the concept of Rails first &amp; Vue first-class approach
-            <i class="text-dark mx-1">&bull;</i> Build some real-world applications with Vue on Rails
-            <i class="text-dark mx-1">&bull;</i> Scaffold a Vue component and get up to speed quickly
-            <i class="text-dark mx-1">&bull;</i> Explore different ways to deploy Vue Component
-            <i class="text-dark mx-1">&bull;</i> Make frustration-free configuration for Vue on Rails
-            <i class="text-dark mx-1">&bull;</i> Learn enough Vue to be dangerous
-            <i class="text-dark mx-1">&bull;</i> Deploying &amp; Testing
+            Build modern and progressive web applications with Vue.js and Ruby on Rails.
+            As the Rails community embraces JavaScript, this book answers your most pressing questions,
+            including how to integrate front-end technologies with Rails, whether to
+            build a single-page application, when and how to use JavaScript in your project,
+            how to scaffold a Vue component in Rails, and how to configure Vue.js in a Rails project.
           </p>
         </div>
         <div class="book-right"></div>
@@ -41,7 +39,7 @@
               <span class="text-dark font-weight-bold">Vue on Rails</span>
               <span class="text-light text-right small">
                 <span class="mr-2">With <i class="fas fa-heart text-danger"></i> by</span>
-                Richard LaFranchi &amp; Bryan Lim
+                Bryan Lim &amp; Richard LaFranchi
               </span>
             </div>
           </div>

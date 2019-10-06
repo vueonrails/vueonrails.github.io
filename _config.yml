@@ -16,11 +16,12 @@
 title: Vue on Rails
 email: vueonrails@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Discover how to build delightful web app using Vue 2.x and Rails 5.x
+  End-to-End Guide to Building Web Apps Using Vue.js and Rails
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_org: https://github.com/vueonrails
 github_repo: https://github.com/vueonrails/vueonrails
+apress_book_url: https://www.apress.com/book/9781484251157
 
 # Build settings
 markdown: kramdown
